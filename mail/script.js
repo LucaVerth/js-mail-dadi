@@ -21,9 +21,15 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 
-if(emailFound == true) {
-  console.log('you can access the list');
-} else{
-  console.log('email not found, you can not access the list');
-}
+let output = document.getElementById('output');
 
+document.getElementById('email').innerHTML = 'Entered email: ' + email;
+
+if(emailFound == true) {
+  document.getElementById('output').innerHTML = 'Email found, you can access the list!';
+  output.classList.add('text-success');
+} else{
+  document.getElementById('output').innerHTML = 'Email not found, you can not access the list! make sure you typed in the correct email address';
+  output.classList.remove('text-success');
+  output.classList.add('text-danger');
+}

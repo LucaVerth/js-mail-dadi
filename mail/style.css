@@ -1,0 +1,16 @@
+body{
+  background-color: teal;
+}
+.lv_row{
+  width:70%;
+  margin: 0 auto;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  min-height: 100px;
+  box-shadow: 0 12px 15px #000;
+}
